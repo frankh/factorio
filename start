@@ -53,7 +53,7 @@ main() {
   refresh_save "$save_name"
 
   ls -la $bin
-  exec $bin --start-server $save_name
+  exec $bin $*
 }
 
 main "$@"
